@@ -1,8 +1,9 @@
 module.exports = {
     // API reference URL
-    apiUrl: "https://eu30.chat-api.com/ // add your URl (from Chat-Api) ",
+    apiUrl: "", //your url from your api can be seen in your chat-api profile
     // API token from your personal cabinet
-    token: "", // your token (from Chat-Api)
- 
+    tokenWhatshap: "", // your token can be seen in your chat-api profile 
+    // Token of your bot (check it on BotFather)
+ tokenTelegram : '',
 }
 
