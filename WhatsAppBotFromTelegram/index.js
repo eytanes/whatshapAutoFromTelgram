@@ -7,8 +7,7 @@ const bot = new TelegramBot(token, {polling: true});
 bot.on('message', (msg) => {
     
     var telegramMessage = msg.text;
- //   var telegramPicture = msg.telegramPicture;
-   // var Hi = "hi";
+ 
  if (telegramMessage != null){
     console.log(telegramMessage);}
 
