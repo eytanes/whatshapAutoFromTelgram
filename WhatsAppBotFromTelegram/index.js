@@ -15,8 +15,8 @@ bot.on('message', (msg) => {
 
 
 var data = {
-  // phone: '972586899203', // Receivers phone or on chatId the id of the whatshap group
- chatId : "972586899203-1552776990@g.us", //chat id can be check on your account of api-chat 
+  // phone: '', // Receivers phone start with number of specific country(without the +) or on chatId the id of the whatshap group
+ chatId : "", //chat id can be check on your account of api-chat 
     body: telegramMessage, 
    
 };
