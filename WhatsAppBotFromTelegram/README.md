@@ -1,4 +1,7 @@
-                 doc from chat-api for going further
+               
+               You need to run npm i before using
+               
+               doc from chat-api for going further
 
 **Introduction**
 
