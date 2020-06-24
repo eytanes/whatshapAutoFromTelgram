@@ -9,17 +9,10 @@ bot.on('message', (msg) => {
     var telegramMessage = msg.text;
  //   var telegramPicture = msg.telegramPicture;
    // var Hi = "hi";
-/*if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
-bot.sendMessage(msg.chat.id,"Hello dear user");
-} */ if (telegramMessage != null){
+ if (telegramMessage != null){
     console.log(telegramMessage);}
 
-   /* var bye = "bye";
-    if (msg.text.toString().toLowerCase().includes(bye)) {
-    bot.sendMessage(msg.chat.id, "Have a nice day " + msg.from.first_name); 
-    } 
-    
-    });*/
+   
 
 
 
