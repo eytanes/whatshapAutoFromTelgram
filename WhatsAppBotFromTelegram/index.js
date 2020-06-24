@@ -1,26 +1,24 @@
 var request = require('request'); //bash: npm install request
 // URL for request POST /message
-var url = 'https://eu76.chat-api.com/instance //instance number messagetoken=// your token     //can be import from the config file 
+const config= require  ("./config.js");
+const tokenWhatshap = config.tokenWhatshap;
+const apiUrl = config.apiUrl;
+var url = `${apiUrl}message?token=${tokenWhatshap}`;
 const TelegramBot = require('node-telegram-bot-api');
-const token = ''  //enter your telegram bot token (check on bot-father);
-const bot = new TelegramBot(token, {polling: true});
+const tokenTelegram = config.tokenTelegram;
+const bot = new TelegramBot(tokenTelegram, {polling: true});
 bot.on('message', (msg) => {
     
     var telegramMessage = msg.text;
- 
- if (telegramMessage != null){
+  if (telegramMessage != null){
     console.log(telegramMessage);}
-
-   
-
-
 
 
 var data = {
- //   phone: '', // Receivers phone
- chatId : "", // receivers chat (id can be check on chat-api) 
-    body: telegramMessage, // Сообщение
-   // body: telegramPicture,
+  // phone: '972586899203', // Receivers phone or on chatId the id of the whatshap group
+ chatId : "972586899203-1552776990@g.us", //chat id can be check on your account of api-chat 
+    body: telegramMessage, 
+   
 };
 // Send a request
 if (telegramMessage != null){
